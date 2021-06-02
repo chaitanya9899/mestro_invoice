@@ -1,0 +1,2 @@
+def VantaanEnergi(agentRunContext):
+    pass

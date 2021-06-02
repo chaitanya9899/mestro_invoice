@@ -1,0 +1,178 @@
+[
+    {
+        "agentId": "MESTRO-UMEA-ENERGI",
+        "description": "Crawler for Umea energi",
+        "energyProvider": "Umea Energi",
+        "homeURL":"https://www.umeaenergi.se/mina-sidor/login",
+        "agentScript":"UmeaEnergi",
+        "invoiceScript":"UmeaEnergi"
+    },
+    {
+        "agentId": "MESTRO-SOLOR-BIOENERGI",
+        "description": "Crawler for Solor Bioenergi",
+        "energyProvider": "Solor Bioenergi",
+        "homeURL":"https://www.kwhgreen.com/Login",
+        "agentScript":"SolorBioenergi",
+        "invoiceScript":"SolorBioenergi"
+    },
+    {
+        "agentId": "MESTRO-SKELLEFTEA-KRAFT",
+        "description": "Crawler for Skelleftea Kraft",
+        "energyProvider": "Skelleftea Kraft",
+        "homeURL":"https://minasidor.skekraft.se/login",
+        "agentScript":"SkellefteaKraft",
+        "invoiceScript":"SkellefteaKraft"
+    },
+    {
+        "agentId": "MESTRO-HARNOSAND-ENERGI-OCH-MILJO",
+        "description": "Crawler for Harnosand Energi Och Miljo",
+        "energyProvider": "Harnosand Energi Och Miljo",
+        "homeURL":"https://minasidor.hemab.se/",
+        "agentScript":"SimilarTemplateCrawlersReports",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-KRAFTRINGEN",
+        "description": "Crawler for Kraftringen",
+        "energyProvider": "Kraftringen",
+        "homeURL":"https://minasidor.kraftringen.se/default.aspx",
+        "agentScript":"SimilarTemplateCrawlersReports",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-HALMSTADS-ENERGI-OCH-MILJO",
+        "description": "Crawler for Halmstads Energi Och Miljo",
+        "energyProvider": "Halmstads Energi Och Miljo",
+        "homeURL":"https://minasidor.hem.se/default.aspx",
+        "agentScript":"SimilarTemplateCrawlersReports",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-VAXJO-ENERGI",
+        "description": "Crawler for Vaxjo Energi",
+        "energyProvider": "Vaxjo Energi",
+        "homeURL":"https://betaminasidor.veab.se/default.aspx",
+        "agentScript":"SimilarTemplateCrawlersReports",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-ALINGSAS-ENERGI",
+        "description": "Crawler for Alingsas Energi",
+        "energyProvider": "Alingsas Energi",
+        "homeURL":"https://minasidor.alingsasenergi.se/PFU2.0/default.aspx",
+        "agentScript":"HistoricalReadings",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-LULEA-ENERGI",
+        "description": "Crawler for Lulea Energi",
+        "energyProvider": "Lulea Energi",
+        "homeURL":"https://minasidor.luleaenergi.se/PFU2.0/",
+        "agentScript":"SimilarTemplateCrawlersReports",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-LJUNGBY-ENERGI",
+        "description": "Crawler for Ljungby Energi",
+        "energyProvider": "Ljungby Energi",
+        "homeURL":"https://bfus.sodrahallandskraft.se/PFULE2.0/default.aspx",
+        "agentScript":"SimilarTemplateCrawlersReports",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-AFFARSVERKEN",
+        "description": "Crawler for Affarsverken",
+        "energyProvider": "Affarsverken",
+        "homeURL":"https://login.affarsverken.se/templates/login/Login.aspx?ReturnUrl=%2fPrivat%2fMina-sidor%2f",
+        "agentScript":"Affarsverken",
+        "invoiceScript":"Affarsverken"
+    },
+    {
+        "agentId": "MESTRO-NEVEL",
+        "description": "Crawler for Nevel",
+        "energyProvider": "Nevel",
+        "homeURL":"https://kaukolampo.nevel.com/eServices/Online/Login",
+        "agentScript":"Nevel",
+        "invoiceScript":"Nevel"
+    },
+    {
+        "agentId": "MESTRO-ESKILSTUNA-ENERGI-OCH-MILJO",
+        "description": "Crawler for Eskilstuna Energi och Miljo",
+        "energyProvider": "Eskilstuna Energi och Miljo",
+        "homeURL":"https://minasidor.eem.se/pfu/",
+        "agentScript":"SimilarTemplateCrawlersReports",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-WEUM",
+        "description": "Crawler for Weum",
+        "energyProvider": "Weum",
+        "homeURL":"https://minasidor.weum.se/default.aspx",
+        "agentScript":"SimilarTemplateCrawlersReports",
+        "invoiceScript":"SimilarTemplateCrawlersReports"
+    },
+    {
+        "agentId": "MESTRO-EFORSYNING",
+        "description": "Crawler for Eforsyning",
+        "energyProvider": "Eforsyning",
+        "homeURL":"NO-HOME-URL",
+        "agentScript":"Eforsyning",
+        "invoiceScript":"Eforsyning"
+    },
+    {
+        "agentId": "MESTRO-TEKNISKA-VERKEN",
+        "description": "Crawler Tekniska Verken",
+        "energyProvider": "Tekniska Verken",
+        "homeURL":"https://www.tekniskaverken.se/#login",
+        "agentScript":"TekniskaVerken",
+        "invoiceScript":"TekniskaVerken"
+    },
+    {
+        "agentId": "MESTRO-VANTAAN-ENERGI",
+        "description": "Crawler for Vantaan Energi",
+        "energyProvider": "Vantaan Energi",
+        "homeURL":"https://online.vantaanenergiasahkoverkot.fi/eServices/Online/IndexNoAuth",
+        "agentScript":"VantaanEnergi",
+        "invoiceScript":"VantaanEnergi"
+    },
+    {
+        "agentId": "MESTRO-ORESUNDSKRAFT",
+        "description": "Crawler for Oresundskraft",
+        "energyProvider": "Oresundskraft",
+        "homeURL":"https://oresundskraft.se/energiportalen/logga-in/",
+        "agentScript":"Oresundskraft",
+        "invoiceScript":"Oresundskraft"
+    },
+    {
+        "agentId": "MESTRO-HOFOR",
+        "description": "Crawler for Hofor",
+        "energyProvider": "Hofor",
+        "homeURL":"https://forbrug.hofor.dk/overblik/",
+        "agentScript":"Hofor",
+        "invoiceScript":"Hofor"
+    },
+    {
+        "agentId": "MESTRO-VATTENFALL",
+        "description": "Crawler for Vattenfall",
+        "energyProvider": "Vattenfall",
+        "homeURL":"https://www.vattenfall.se/",
+        "agentScript":"Vattenfall",
+        "invoiceScript":"Vattenfall"
+    },
+    {
+        "agentId": "MESTRO-VATTENFALL-HEATING",
+        "description": "Crawler for Vattenfall (Heating)",
+        "energyProvider": "Vattenfall (Heating)",
+        "homeURL":"https://heatbusinessportal.vattenfall.se/home",
+        "agentScript":"VattenfallHeating",
+        "invoiceScript":"VattenfallHeating"
+    },
+    {
+        "agentId": "MESTRO-KALMAR-ENERGI",
+        "description": "Crawler for Kalmar Energi",
+        "energyProvider": "Kalmar Energi",
+        "homeURL":"https://minasidor.kalmarenergi.se/default.aspx",
+        "agentScript":"KalmarEnergi",
+        "invoiceScript":"KalmarEnergi"
+    }
+]

@@ -1,0 +1,44 @@
+#!groovy
+
+ node('master') { 
+
+try {
+   stage('Checkout'){
+      checkout scm
+	    }
+	
+		
+	stage('Docker-compose')
+withCredentials([string(credentialsId: 'mestro-encryption-password', variable: 'encryption_pass')]) {
+		sh '''
+		echo $encryption_pass > encryption_pass.txt
+		environment=$(echo "$JOB_BASE_NAME" | rev | cut -d'-' -f 1 | rev)
+                echo "$environment"
+	        yes | ccrypt -d ./mestro-deploy/env-vars/$environment.env.cpt -K "$(cat encryption_pass.txt)"
+	        cp -rpf ./mestro-deploy/env-vars/$environment.env ./$environment.env;
+		
+             '''
+
+withCredentials([usernamePassword(credentialsId: '9dd556cd-e849-48d0-8164-34271f6691c1', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
+	       sh '''
+	  
+		environment=$(echo "$JOB_BASE_NAME" | rev | cut -d'-' -f 1 | rev)
+		compose_file=$(echo "$image_name" | cut -d':' -f 1)
+		tag=$(echo "$image_name" | cut -d':' -f 2)
+                az acr login -n CrawlerContainerRegistry -u $USERNAME -p $PASSWORD
+		sudo env image="$compose_file" tag=$tag env="$environment" docker stack deploy --compose-file=mestro-deploy/$compose_file.yml --with-registry-auth --resolve-image=always gateway 
+		rm -rf encryption_pass.txt dev.env
+		
+		'''
+
+	}
+
+
+	}
+   
+ }
+catch (err) {
+    currentBuild.result = "FAILURE"
+    throw err
+ }
+  }

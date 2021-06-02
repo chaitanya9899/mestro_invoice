@@ -1,0 +1,2 @@
+def Oresundskraft(agentRunContext):
+    pass

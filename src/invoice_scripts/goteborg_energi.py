@@ -1,0 +1,2 @@
+def GoteborgEnergi(agentRunContext):
+    pass

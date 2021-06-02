@@ -1,0 +1,2 @@
+def LerumEnergi(agentRunContext):
+    pass

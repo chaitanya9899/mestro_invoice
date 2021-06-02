@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  mestro-crawler:
+    image: crawlercontainerregistry.azurecr.io/${image}:${tag}
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 3
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "5001:5001"
+    env_file:
+    - ./env-vars/${env}.env
+
+    networks:
+      - frontend
+
+networks:
+  frontend:
+    driver: overlay
+    external: true
